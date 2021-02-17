@@ -56,3 +56,35 @@
   transition-property: all;
   transition: 2s;
 }
+/* ex 8 */
+.ex-8-img:hover{
+  filter:sepia(70%) grayscale(50%);
+  border-radius: 20px;
+}
+
+.ex-8-img{
+  transition: 2s;
+}
+/* ex 9 */
+.ex-9-img:hover{
+  filter:sepia(70%) grayscale(50%);
+  border-radius: 20px;
+  transform: scale(1.5,1.5);
+}
+.ex-9-img{
+  transition: 2s;
+}
+
+/* ex10 */
+.ex-10-icon{
+	animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
