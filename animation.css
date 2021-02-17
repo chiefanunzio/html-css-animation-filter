@@ -42,3 +42,17 @@
   transition: 1s;
 }
 /* ex6 */
+.ex-6-img:hover{
+  filter: grayscale(1005);
+}
+
+/* ex 7 */
+
+.ex-7-img:hover{
+  filter:sepia(70%) grayscale(50%);
+}
+
+.ex-7-img{
+  transition-property: all;
+  transition: 2s;
+}
