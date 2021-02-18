@@ -1,102 +1,130 @@
 /* ex 1 */
-.ex-1-square:hover{
+.ex-1-square:hover {
   background-color: red;
 }
 
-.ex-1-square{
+.ex-1-square {
   transition: 2s;
 }
+
 /* ex 2 */
-.ex-2-square:active{
+.ex-2-square:active {
   width: 100%;
 }
 
-.ex-2-square{
+.ex-2-square {
   transition: 3s;
 }
+
 /* ex 3 */
-.ex-3-square:hover{
+.ex-3-square:hover {
   border-radius: 50%
 }
 
-.ex-3-square{
+.ex-3-square {
   transition: 0.5s ease-out;
 }
+
 /* ex 4 */
-.ex-4-square:hover{
+.ex-4-square:hover {
   background: transparent;
 }
 
-.ex-4-square{
+.ex-4-square {
   transition: 1.5s ease-out;
 }
+
 /* ex 5 */
-.ex-5-square:hover{
-  transform: scale(2,2);
-}
-.ex-5-square:active{
-  transform: scale(0.5,0.5);
+.ex-5-square:hover {
+  transform: scale(2, 2);
 }
 
-.ex-5-square{
+.ex-5-square:active {
+  transform: scale(0.5, 0.5);
+}
+
+.ex-5-square {
   transition: 1s;
 }
+
 /* ex6 */
-.ex-6-img:hover{
+.ex-6-img:hover {
   filter: grayscale(1005);
 }
 
 /* ex 7 */
-
-.ex-7-img:hover{
-  filter:sepia(70%) grayscale(50%);
+.ex-7-img:hover {
+  filter: sepia(70%) grayscale(50%);
 }
 
-.ex-7-img{
+.ex-7-img {
   transition-property: all;
   transition: 2s;
 }
+
 /* ex 8 */
-.ex-8-img:hover{
-  filter:sepia(70%) grayscale(50%);
+.ex-8-img:hover {
+  filter: sepia(70%) grayscale(50%);
   border-radius: 20px;
 }
 
-.ex-8-img{
+.ex-8-img {
   transition: 2s;
 }
+
 /* ex 9 */
-.ex-9-img:hover{
-  filter:sepia(70%) grayscale(50%);
+.ex-9-img:hover {
+  filter: sepia(70%) grayscale(50%);
   border-radius: 20px;
-  transform: scale(1.5,1.5);
+  transform: scale(1.5, 1.5);
 }
-.ex-9-img{
+
+.ex-9-img {
   transition: 2s;
 }
 
 /* ex10 */
-.ex-10-icon{
-	animation: rotation 1s infinite linear reverse;
+.ex-10-icon {
+  animation: rotation 1s infinite linear reverse;
 }
 
 @keyframes rotation {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 /* ex 11 */
-.ex-11-icon:hover{
-  animation: rotation2 1s  linear;
+.ex-11-icon:hover {
+  animation: rotation2 1s linear;
+}
+
+@keyframes rotation2 {
+  0% {
+    transform: rotate(0deg);
   }
 
-  @keyframes rotation2 {
-    0% {
-      transform: rotate(0deg);
+  80% {
+    transform: rotate(270deg);
+  }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: half-rotate 2s linear;
+}
+
+@keyframes half-rotate{
+  0% {
+        left: 10%;
     }
-    80% {
-      transform: rotate(270deg);
+    50% {
+        left: calc(100% - 60px);
     }
+    100% {
+        left: 10%;
+    }
+}
